@@ -19,7 +19,7 @@ Applications are generic Next.js applications with varying build settings used t
       - Typescript-based Next.js project created with `npx create-next-app@latest`
 
 
-# `bundle` Package (Using ESBuild to Bundle Pages)
+# `bundle` Package (Using ESBuild to Bundle Pages and Page-like Components)
 
 This is the first attempt at making a package that can be used in other Next.js applications. 
 
@@ -29,8 +29,6 @@ This is the first attempt at making a package that can be used in other Next.js 
 - `bundle.mjs` is used to bundle the desired shared entry points
 - The `package.json` file was updated to include the bundled output as `exports`
 
-## Requirements in Bundled Pages
-- **Must explicitly import `React`**.
 
 ## Known Issues
-- There seems to be an issue with `next/font/google"` in downstream applications – I've just disabled this for now.
+- There seems to be an issue with `next/font/google` in downstream applications – I've just disabled this for now.
